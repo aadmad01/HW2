@@ -19,6 +19,41 @@
             #bot{
                 margin: 20px 20px 40px 20px;
             }
+            
+            @media (max-width: 2000px){
+                #small{
+                    display: none;
+                }
+            }
+            @media (max-width: 600px){
+                h1{
+                    font-size: 35px;
+                    margin-top: 40px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .box{
+                    width: 100%; max-width: 500px;
+                    position: relative;
+                }
+                .box-bottom-left{
+                    width: 100%; max-width: 500px;
+                    margin-top: 10px;
+                    margin: 10px 0 0 0;
+                    position: relative;
+
+                }
+                #big{
+                    display: none;
+                }
+                #small{
+                    display: block;
+                }
+                #img{
+                    display: none;
+                }
+            }
         </style>
         
         <title>Contact Us</title>
@@ -28,14 +63,17 @@
     </head>
     <body style="margin:0;padding:0;"!important>
     <!-- <body> -->
-    <div class="navbar">
+    <div id = "big" class="navbar">
         <a href= "#contactUs" target="_blank">Contact Us!</a>
-        <a href = "#Services" target="_blank">Services</a>
+        <a href = "Services.html" target="_blank">Services</a>
         <a href = "#Breeds" target="_blank">Breeds</a>
         <a href = "#Search" target="_blank">Search</a>
         <a href = "#Donate" target="_blank">Donate</a>
         <a href = "#Volunteer" target="_blank">Volunteer</a>
-
+    </div>
+    <div id = "small" class="navbar">
+        <a href= "#contactUs" target="_blank">Contact Us!</a>
+        <a href = "#Search" target="_blank">Search</a>
     </div>
         
         
@@ -46,7 +84,8 @@
                 </div>
                 <hr style = "width: 80%">
                 <!-- <div class="column"> -->
-                <div style="float:left; width:40%; margin: 20px; background: #d3d3d3; border-radius: 7px;">
+                <!-- <div style="float:left; width:40%; margin: 20px; background: #d3d3d3; border-radius: 7px;"> -->
+                <div class="box">
                     <form style = "padding: 10px;">
                         <label>Name:</label>
                         <input type="text" name="name" placeholder="Your Name ..." style ="width: 70%">
@@ -78,13 +117,14 @@
                     </form>
                 </div>
                 <!-- <div class="column"> -->
-                <div style='float:right; width:40%; margin-right:20px; height:500px'>
+                <div id = "img"style='float:right; width:40%; margin-right:20px; height:500px'>
                 <img src="dog3.jpeg">
                 <!-- <img src="dog2.jpg"> -->
 
                 </div>
                 
-                <div id = "bot"style="float:left; width:40%;background: #d3d3d3;border-radius: 7px;">
+                <!-- <div id = "bot"style="float:left; width:40%;background: #d3d3d3;border-radius: 7px;"> -->
+                <div class="box-bottom-left" id = "bot">
                     <h2 style="margin: 10px"> Contact Us: </h2>
                     <p>Phone Number: <a href="tel:+16174992123">+16174992123</a></p>
                     <p>Email: help@adoptadog.com</p>
