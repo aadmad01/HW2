@@ -14,14 +14,12 @@
             font-family: 'Montserrat', sans-serif;
             text-align: center;
         }
-        
         @media (max-width: 2000px){
             #small{
                 display: none;
             }
         }
-        
-        @media (max-width: 800px){
+        @media (max-width: 600px){
             h1{
                 font-size: 35px;
             }
@@ -37,6 +35,9 @@
                 margin-top: 10px;
                 margin: 10px 0 0 0;
             }
+            /* .navbar{
+                display: none;
+            } */
             .hero-image{
                 height: 100px;
             }
@@ -48,7 +49,7 @@
                 display: none;
             }
             #small{
-                display: block;
+                display: block; !important
             }
         }
     </style>
@@ -60,14 +61,14 @@
 
 <body style="margin:0;padding:0;"!important>
     <div id = "big" class="navbar">
-        <a href= "#contactUs" target="_blank">Contact Us!</a>
+        <a href= "#contactUs.html" target="_blank">Contact Us!</a>
         <a href = "Services.html" target="_blank">Services</a>
         <a href = "#Breeds" target="_blank">Breeds</a>
         <a href = "#Search" target="_blank">Search</a>
         <a href = "#Donate" target="_blank">Donate</a>
         <a href = "#Volunteer" target="_blank">Volunteer</a>
     </div>
-    <div id = "small" class="navbar" style= "display: none">
+    <div id = "small" class="navbar">
         <a href= "#contactUs" target="_blank">Contact Us!</a>
         <a href = "#Search" target="_blank">Search</a>
     </div>
