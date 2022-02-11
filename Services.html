@@ -34,6 +34,44 @@
                 margin: 0 auto;
                 /* position: absolute; */
             }
+            
+             @media (max-width: 2000px){
+                #small{
+                    display: none;
+                }
+            }
+            @media (max-width: 600px){
+                h1{
+                    font-size: 35px;
+                    padding-top: 20px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .box{
+                    width: 100%; max-width: 500px;
+                    position: relative; */
+                    padding: 0 auto;
+                }
+                 .box-bottom{
+                    width: 100%; max-width: 500px;
+                    margin-top: 10px;
+                    margin: 10px 0 0 0;
+                    padding: 0 auto;
+                    position: relative;
+                    float left;
+
+                }
+                #big{
+                    display: none;
+                }
+                #small{
+                    display: block;
+                }
+                #img{
+                    display: none;
+                }
+            }
         </style>
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,19 +82,23 @@
     </head>
     
     <body style="margin:0;padding:0;"!important>
-        <div class="navbar">
-            <a href= "#contactUs" target="_blank">Contact Us!</a>
-            <a href = "#Services" target="_blank">Services</a>
+        <div id = "big" class="navbar">
+            <a href= "#contactUs.html" target="_blank">Contact Us!</a>
+            <a href = "Services.html" target="_blank">Services</a>
             <a href = "#Breeds" target="_blank">Breeds</a>
             <a href = "#Search" target="_blank">Search</a>
             <a href = "#Donate" target="_blank">Donate</a>
             <a href = "#Volunteer" target="_blank">Volunteer</a>
-
+        </div>
+        <div id = "small" class="navbar">
+            <a href= "#contactUs" target="_blank">Contact Us!</a>
+            <a href = "#Search" target="_blank">Search</a>
         </div>
         
         <h1>About Us</h1>
         
-        <div style="float:left; width:40%; margin: 20px;background: #d3d3d3;border-radius: 7px">
+        <!-- <div style="float:left; width:40%; margin: 20px;background: #d3d3d3;border-radius: 7px"> -->
+        <div class="box">
             <h2> How We Started: </h2>
             <p>Adopt A Dog is a shelter that is driven to find all dogs a new home. We
                believe that all dogs deserve a loving owner regardless of
@@ -69,7 +111,8 @@
                    <a href="contactUs.html" target="_blank">Adopt Your Dream Dog</a></button>
         </div>
         
-        <div style="float:right; width:40%; margin: 20px;background: #d3d3d3;border-radius: 7px">
+        <!-- <div style="float:right; width:40%; margin: 20px;background: #d3d3d3;border-radius: 7px"> -->
+        <div class="box-bottom">
             <h2> Our Goals: </h2>
             <p>At Adopt A Dog, we want to foster a community of individuals to 
             help take care of the many dogs in need.</p>
